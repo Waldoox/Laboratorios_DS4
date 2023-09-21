@@ -1,7 +1,7 @@
 :root{
     --color_primario: #FFF2F2;
     --color_secundario: #8EA7E9;
-    --color_auxiliar: #E5E0FF;
+    --color_auxiliar: #6E85B7;
     --color_texto: #7286D3;
 }
 
@@ -9,4 +9,14 @@ body{
     background-color: var(--color_primario);
     font-family: 'Krub', sans-serif;
     color: var(--color_texto);
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+hr{
+    border-color: var(--color_auxiliar);
 }
