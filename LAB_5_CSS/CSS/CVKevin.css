@@ -1,7 +1,6 @@
 :root{
     --color_primario: #FFF2F2;
-    --color_secundario: #8EA7E9;
-    --color_auxiliar: #6E85B7;
+    --color_auxiliar: #E55604;
     --color_texto: #7286D3;
 }
 
@@ -9,6 +8,7 @@ body{
     background-color: var(--color_primario);
     font-family: 'Krub', sans-serif;
     color: var(--color_texto);
+    text-align: center;
 }
 
 img{
@@ -19,4 +19,22 @@ img{
 
 hr{
     border-color: var(--color_auxiliar);
+    width: 50%;
+    height: 5px;
+    background-color: var(--color_auxiliar);
+    border-radius: 10px;
+}
+
+section h2{
+    font-size: 30px;
+    
+}
+
+li,p, a{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
 }
