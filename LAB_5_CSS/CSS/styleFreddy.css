@@ -1,0 +1,44 @@
+* {
+    background-color:cadetblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    color:azure;
+    font-size: 15;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: darkkhaki;
+}
+
+.seccion1 {
+    text-decoration:underline;
+    line-height: 40px;
+}
+
+.seccion2 {
+    text-align:end;
+
+}
+
+.seccion3 {
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.seccion4{
+    background-image: url(../img/gato.jpg);
+    background-size: cover;
+    height: 650px;
+}
+
+.seccion5{
+    background-color: transparent;
+    line-height: 30px;
+    color: aliceblue;
+}
