@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS estilo interno</title>
+    
+    <style>
+    * {
+        background-color:cadetblue;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+    h1 {
+        color:azure;
+        font-size: 15;
+        letter-spacing: 5px;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: 400;
+        text-transform: uppercase;
+        background-color: darkkhaki;
+    }
+
+    .seccion1 {
+        text-decoration:underline;
+        line-height: 40px;
+    }
+
+    .seccion2 {
+        text-align:end;
+
+    }
+
+    .seccion3 {
+        text-align: center;
+        word-spacing: 5px;
+    }
+
+    .seccion4{
+        background-image: url(image/gato.jpg);
+        background-size: cover;
+        height: 650px;
+    }
+
+    .seccion5{
+        background-color: transparent;
+        line-height: 30px;
+        color: aliceblue;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1><center>Freddy Pan</center></h1>
+        <center><img src="image/foto.jpg" alt="Foto" width="200" height="200" ></center>
+    </header>
+    <section class = "seccion2" >
+        <h2>Experiencia </h2>
+        <ul  class = "seccion1">
+            <li>Elaboración de un sistema para biblioteca</li>
+            <li>Elaboración de base de datos para bibliotaca</li>
+            <li>Proyectos virtuales</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class = "seccion2">
+        <h2>Educación</h2>
+        <ul  class = "seccion1">
+            <li>Licenciatura en Desarrollo de Software (2022-2025)</li>
+            <li>Bachiller en ciencias (2016-2021)</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="seccion3">
+        <h2>Conocimientos</h2>
+        <ul  class = "seccion1">
+            <li>Java, C++</li>
+            <li>HTML, CSS </li>
+            <li>Chino mandarín, ingles, español</li>
+        </ul>
+    </section>
+
+    <hr>
+    <section class="seccion4">
+        <h2>Datos generales</h2>
+            <p class = "seccion5">Cedula: 8-981-989</p>
+            <p class = "seccion5">Fecha de nacimiento:26/03/2002</p>
+            <p class = "seccion5">Nacionalidad: Panameño</p>
+            <p class = "seccion5">Correo: freddy.pan@utp.ac.pa</p>
+            <p class = "seccion5">Teléfono: 6807-1298</p>
+
+    </section>
+    
+    <hr>
+    <section >
+        <h2>Seccion abierta</h2>
+        <h3>Hobbies</h3>
+        <ul  class = "seccion1">
+            <li>Baloncesto</li>
+            <li>Fútbol</li>
+            <li>Videojuegos</li>
+        </ul>
+    </section>
+    <hr>
+
+    <footer>
+    <h3>Compañeros</h3>
+        <nav>
+            <a href="CVDaniel.html">Curriculum de Daniel</a>
+            <br>
+            <a href="CVKevin.html">Curriculum de Kevin</a>
+        </nav>
+    </footer>
+    
+    
+</body>
+</html>
