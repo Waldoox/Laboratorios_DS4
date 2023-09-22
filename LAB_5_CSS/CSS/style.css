@@ -1,0 +1,30 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c9c9c9;
+
+        }
+        header {
+            text-align: center;
+        }
+        section {
+            text-align: left;
+        }
+        img {
+            display: block;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: square;
+        }
+
+        li {
+            font-size: 16px;
+        }
+        hr {
+            border: 2px solid #8da495;
+        }
+        footer {
+            text-align: center;
+        }
