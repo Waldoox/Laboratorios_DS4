@@ -370,3 +370,194 @@ li:hover{
     background-color: #0087b3;
     color: white;
 }
+
+.stats {
+    
+    padding: 20px 0 0 20px;
+    border: 0px solid black;
+    width: 1100px;
+    height: 650px;
+    overflow: hidden;
+
+
+}
+
+.stats-title {
+    font-size: 34px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.stats-heading {
+
+
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 500px;
+    height: 270px;
+    border: 0.5px solid white;
+
+    
+}
+
+
+.stats-number {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 115px;
+}
+
+
+.info-container {
+display: flex;
+justify-content: center;
+align-items: center;
+
+    
+}
+
+
+
+.info-heading {
+
+    height: 500px;
+    width: 310px;
+    margin: 20px;
+    border-radius: 5px;
+    
+
+}
+.info-title {
+    font-size: 34px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.info-texto {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-button {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: #0087b3;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.explore {
+    
+  
+    padding: 20px 0 0 20px;
+    border: 0px solid white;
+    width: 1100px;
+    height: 650px;
+    overflow: hidden;
+
+}
+
+.explore-1 {
+    float: left;
+    width: 500px;
+    height: 270px;
+    margin: 0 20px 20px 0;
+    border: 1px solid white;
+}
+
+.explore-2 {
+    float: left;
+    width: 500px;
+    height: 270px;
+    margin: 0 20px 20px 0;
+    border: 1px solid white;
+}
+.explore-3 {
+    float: left;
+    width: 1023px;
+    height: 270px;
+    margin: 0 20px 20px 0;
+    border: 1px solid white;
+}
+
+.explore-title {
+
+    font-size: 34px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+
+
+}
+
+.explore-texto {
+
+    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.explore-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the unordered lists (ul) */
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the list items (li) */
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+/* Style links within the footer */
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style links on hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
