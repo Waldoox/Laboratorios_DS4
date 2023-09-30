@@ -4,73 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>NapCoin</title>
 </head>
 <body>
-    <nav>
-        <img src="img/napcoin.png" alt="take a nap" style="width: 200px;">
-        <ul>
-            <li>
-                <label>Utiliza Napcoin</label>
-                <select>
-                    <option value=""></option>
-                </select>
-            </li>
-            <li>
-                <label>Aprende</label>
-                <select>
-                    <option value=""></option>
-                </select>
-            </li>
-            <li>
-                <label>Desarrolladores</label>
-                <select>
-                    <option value=""></option>
-                </select>
-            </li>
-            <li>
-                <label>Empresa</label>
-                <select>
-                    <option value=""></option>
-                </select>
-            </li>
-            <li>
-                <label>Comunidad</label>
-                <select>
-                    <option value=""></option>
-                </select>
-            </li>
-        </ul>
-
-        <ul>
-            <img src="img/search.png" alt="busca" style="width: 15px;">
-            <input type="text" placeholder="Buscar...">
-            <img src="img/Half-Moon.png" alt="Modo oscuro" style="width: 15px;">
-            <img src="img/world.png" alt="Lenguaje" style="width: 15px;">
-            <p>Idiomas ES</p>
-        </ul>
-    </nav>
-
-    <header>
-        <img src="img/main_header.png" alt="">
-        <p>Español</p>
-        <h1>Bienvenidos a NapCoin</h1>
-        <p>NapCoin es la tecnología de gestión comunitaria que impulsa las siestas y miles de aplicaciones de descanso.</p>
-        <a href="#">Explora NapCoin</a>
-    </header>
-    <main>
-        <section>
-            <div>
-                <h2>Empezar</h2>
-                <p>Napcoin.org es su portal de entrada al mundo de Napcoin, una criptomoneda inspirada en las siestas y el descanso. Esta tecnología es nueva y está en constante evolución, por eso ayuda tener una guía. Estas son nuestras recomendaciones para adentrarse en este mundo de tranquilidad y descanso.</p>
+    <div class="nav-container">
+        <nav class="nav-menus">
+            <div class="nav-menus-container">
+                <img src="img/napcoin.png" alt="take a nap" class="nav-logo">
+                <div class="nav-main-menu">
+                    <ul class="main-menu">
+                        <li>Utiliza Napcoin <img src="img/dropdown.png" alt="" class="dropdown"></li>
+                        <li>Aprende <img src="img/dropdown.png" alt="" class="dropdown"></li>
+                        <li>Desarrolladores <img src="img/dropdown.png" alt="" class="dropdown"></li>
+                        <li>Empresa <img src="img/dropdown.png" alt="" class="dropdown"></li>
+                        <li>Comunidad <img src="img/dropdown.png" alt="" class="dropdown"></li>
+                    </ul>    
+                    <div class="sec-menu">
+                        <input type="text" name="Search" id="Search-bar" placeholder="Buscar..">
+                        <div class="sec-menu-add-on">
+                            <img src="img/sun.png" alt="Modo oscuro" class="menu-icons">
+                            <img src="img/world.png" alt="Lenguaje" class="menu-icons">
+                            <p>Idiomas ES</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/Ilustrative_img.png" alt="">
-            </div>
-        </section>
-
-    </main>
-
     
+                
+        </nav>
+    </div>
+
+    <div>
+        <div class="img-wrapper img-header">
+            <img src="img/main_header.png" alt="">
+        </div>
+        <p class="lang">Español</p>
+        <header class="heading">
+            <h1 class="headint-title">Bienvenidos a NapCoin</h1>
+            <p class="heading-text">NapCoin es la tecnología de gestión comunitaria que impulsa las siestas y miles de aplicaciones de descanso, brindando una plataforma segura y eficiente para fomentar un mundo más relajado y revitalizante. <p>
+            <div class="button-container">
+                <a href="#" class="button">Explora NapCoin</a>
+            </div>
+        </header>
+    </div>
+
+    <section class="get-started-section">
+        <div class="get-started">
+            <div class="get-started-text">
+                <div>
+                    <h2 class="text-started">Empezemos</h2>
+                <p class="legend-text">
+                    Napcoin.org es su portal de entrada al mundo de Napcoin, una criptomoneda inspirada en las siestas y el descanso. Esta tecnología es nueva y está en constante evolución, por eso ayuda tener una guía. Estas son nuestras recomendaciones para adentrarse en este mundo de tranquilidad y descanso</p>
+                </div>
+                
+                    <div class="get-started-section-img">
+                        <div class="get-started-img">
+                            <img src="img/Ilustrative_img.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+            </div>
+            
+
+            </div>
+            <div class="get-started-boxes">
+                <div class="boxes">
+                    <div class="card-img">
+                        <div class="card-img-wrap">
+                            <img src="img/card-img.png" alt="" class="img-card">
+                        </div>
+                    </div>
+                    <div class="card-content-container">
+                        <h3 class="card-content-heading">Encuentra tu cartera</h3>
+                        <p class="card-content-legend">Una cartera que se conecte a Nap y administre tus fondos</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="card-img">
+                        <div class="card-img-wrap">
+                            <img src="img/card-img1.png" alt="" class="img-card">
+                        </div>
+                    </div>
+                    <div class="card-content-container">
+                        <h3 class="card-content-heading">Consigue NapCoins</h3>
+                        <p class="card-content-legend"> NAP es la moneda de NapCoin y puedes usarla en aplicaciones</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="card-img">
+                        <div class="card-img-wrap">
+                            <img src="img/card-img2.png" alt="" class="img-card">
+                        </div>
+                    </div>
+                    <div class="card-content-container">
+                        <h3 class="card-content-heading">Utilizar Napps</h3>
+                        <p class="card-content-legend">Las NApps son aplicaciones impulsadas por Napcoin. Echa un vistazo a lo que pueden hacer.</p>
+                    </div>
+                </div>
+
+                <div class="boxes">
+                    <div class="card-img">
+                        <div class="card-img-wrap">
+                            <img src="img/card-img3.png" alt="" class="img-card">
+                        </div>
+                    </div>
+                    <div class="card-content-container">
+                        <h3 class="card-content-heading">Empezar a crear</h3>
+                        <p class="card-content-legend">Si quieres empezar a programar en NapCoin, tenemos documentación, tutoriales y más en nuestro portal para Devs</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sections-cards">
+        <div class="sections-cards-lft">
+            <div class="cards-text-container">
+                <h2 class="card-heading">
+                    ¿Qué es NapCoin?
+                </h2>
+                <p class="card-legend">
+                    NapCoin es una tecnología que promueve el descanso digital, la relajación global y aplicaciones para un sueño reparador. La comunidad ha construido una próspera economía del bienestar, nuevas formas audaces para que las personas recarguen energías en línea y mucho más. Está abierto a todos, sin importar dónde se encuentren; lo único que se necesita es tener acceso a un espacio para descansar.
+                </p>
+                <div>
+                    <a href="#" class="button">¿Qué es Napcoin?</a>
+                    <a href="#" class="button button-alpha">Más sobre las siestas digitales</a>
+                </div>
+            </div>
+            <div class="cards-img-container">
+                <div class="cards-img">
+                    <img src="img/section-img.png" alt="" class="section-img">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sections-cards">
+        <div class="sections-cards-rg">
+            <div class="cards-text-container">
+                <h2 class="card-heading">
+                    Un sistema financiero más justo con NapCoin
+                </h2>
+                <p class="card-legend">
+                    Hoy en día, millones de personas en todo el mundo se enfrentan a la imposibilidad de acceder a servicios bancarios tradicionales, mientras que otros ven sus pagos bloqueados. El sistema descentralizado de finanzas (DeFi) de NapCoin nunca se detiene ni discrimina. Con solo una conexión a internet, puede enviar, recibir, tomar prestado, acumular intereses e incluso transferir fondos a cualquier parte del mundo. En NapCoin, promovemos la inclusión financiera y la igualdad de acceso para todos.
+                </p>
+                <div>
+                    <a href="#" class="button">¿Qué es Napcoin?</a>
+                </div>
+            </div>
+            <div class="cards-img-container">
+                <div class="cards-img">
+                    <img src="img/section-img2.png" alt="" class="section-img">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sections-cards">
+        <div class="sections-cards-lft">
+            <div class="cards-text-container">
+                <h2 class="card-heading">
+                    El internet de activos
+                </h2>
+                <p class="card-legend">
+                    NapCoin no se limita a ser una moneda digital, va más allá. Cualquier cosa que tenga valor puede ser representada, intercambiada y utilizada como un token no fungible (NFT) en la plataforma NapCoin. Puede "tokenizar" su arte y obtener comisiones automáticamente cada vez que se revenda, o utilizar un token que represente algo que posea como garantía para obtener un préstamo. La innovación y la creatividad son el motor que impulsa a NapCoin, y las posibilidades para expandir sus aplicaciones son infinitas.
+                </p>
+                <div>
+                    <a href="#" class="button">¿Qué es Napcoin?</a>
+                </div>
+            </div>
+            <div class="cards-img-container">
+                <div class="cards-img">
+                    <img src="img/section-img3.png" alt="" class="section-img">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-sections-cards">
+        <div class="sections-cards-rg">
+            <div class="cards-text-container">
+                <h2 class="card-heading">
+                    Un mundo de siestas abiertas
+                </h2>
+                <p class="card-legend">
+                    En la era actual, acceder a servicios en línea "gratuitos" a menudo implica ceder el control de nuestra información personal. NapCoin cambia las reglas del juego: nuestros servicios son abiertos por defecto. Solo necesita una cartera, que es gratuita y fácil de configurar. Usted tiene el control total, y todo funciona sin necesidad de compartir información personal. En NapCoin, su privacidad es nuestra prioridad.
+                </p>
+                <div>
+                    <a href="#" class="button">Servicios gratuitos</a>
+                    <a href="#" class="button-alpha">Más sobre Carteras</a>
+                </div>
+            </div>
+            <div class="cards-img-container">
+                <div class="cards-img">
+                    <img src="img/section-img2.png" alt="" class="section-img">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+       
 </body>
 </html>
