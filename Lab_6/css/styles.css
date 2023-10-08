@@ -1,0 +1,181 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color:darkgreen;
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 290px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu-item{
+    padding: 25px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background-color: rgba(82, 41, 0, 0.845);
+    padding: 12px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+button{
+    background-color:green;
+    color: white;
+    width: 220px;
+    height: 60px;
+    font-size: 22px;
+    border: 3px solid rgb(88, 139, 12);
+    border-radius: 10px;
+}
+
+header{
+    height: 650px;
+    background: url(../img/Minecraft.jpg);
+    background-size:cover;
+    backdrop-filter: blur(10px);
+
+}
+
+.cuadritos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.titulo{
+    color: rgb(78, 76, 66);
+    font-size: 30px;
+    text-align:left;
+    position: relative;
+    left: 170px;
+    width: 500px;
+}
+
+.nombre{
+    color: rgb(78, 76, 66);
+    text-align:left;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    font-size: 25px;
+}
+
+.textito{
+    color: rgb(78, 76, 66);
+    font-size: 50px;
+    text-align:left;
+    position: relative;
+    left: 170px;
+    bottom: 30px;
+    width: 700px;
+}
+
+.infor{
+    color: rgb(78, 76, 66);
+    text-align:left;
+    position: relative;
+    left: 170px;
+    width: 550px;
+    font-size: 20px;
+    bottom: 75px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.botoncito{
+    width: 300px;
+    height: 80px;
+    color: white;
+    margin: 40px;
+    position: relative;
+    left: 130px;
+    bottom: 100px;
+    
+}
+
+
+.section-cards{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 150px 0;
+}
+
+.bg-img{
+    background-image: url(../img/bg-section.png);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img{
+    height: 150px ;
+    width: 150px;
+}
+
+.cards{
+    background-color: darkgreen;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    padding: 25px;
+    -webkit-box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.79);
+    -moz-box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.79);
+    box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.79);
+}
+
+.card-text{
+    line-height: 1.5;
+    color: white;
+}
+
+.card-text a{
+    color:greenyellow;
+}
+
+.banner{
+    margin: 0px 0 150px 0;
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-filter{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text{
+    color: white;
+}
