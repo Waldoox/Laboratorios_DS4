@@ -2,6 +2,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
 nav{
     background-color:darkgreen;
     height: 100px;
@@ -43,7 +48,7 @@ button{
 
 header{
     height: 650px;
-    background: url(img/Minecraft.jpg);
+    background: url(../img/Minecraft.jpg);
     background-size:cover;
     backdrop-filter: blur(10px);
 
@@ -104,4 +109,73 @@ header{
     left: 130px;
     bottom: 100px;
     
+}
+
+
+.section-cards{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 150px 0;
+}
+
+.bg-img{
+    background-image: url(../img/bg-section.png);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img{
+    height: 150px ;
+    width: 150px;
+}
+
+.cards{
+    background-color: darkgreen;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    padding: 25px;
+    -webkit-box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.79);
+    -moz-box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.79);
+    box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.79);
+}
+
+.card-text{
+    line-height: 1.5;
+    color: white;
+}
+
+.card-text a{
+    color:greenyellow;
+}
+
+.banner{
+    margin: 0px 0 150px 0;
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-filter{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text{
+    color: white;
 }
