@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Tabla 3x11</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción del ejemplo</th>
+                    <th>Ejemplo</th>
+                    <th>Botón para activar el ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cambiar el color de párrafo</td>
+                    <td>
+                        <p id= "cambiarcolor">Click para cambiar a verde </p>                                        
+                    </td>
+                    <td>
+                        <button onclick="Cambiar()">Cambiar</button>
+
+                        <script>
+                            function Cambiar(){
+                                var x = document.getElementById("cambiarcolor");
+                                x.style.color= "green";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Añadir texto a un párrafo</td>
+                    <td>
+                        <p id= "agregartexto">Click para agregar texto.</p>
+                    </td>
+                    <td>
+                        <button onclick="Agregar()">Agregar</button>
+
+                        <script>
+                            function Agregar(){
+                                var x1 = document.getElementById("agregartexto");
+                                x1.textContent +=" Texto nuevo"                                
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Concatenar el valor de dos textos</td>
+                    <td>
+                        <p>Click para concatenar texto.</p>
+                        <p id="concatenar_texto">Mine + craft</p>                        
+                    </td>
+                    <td>
+                        <button onclick="Concatenar()">Concatenar</button>
+
+                        <script>
+                            function Concatenar(){
+                                var p1= "Mine";
+                                var p2= "craft";
+                                var resul= p1+p2;
+                                var x2 = document.getElementById("concatenar_texto");
+                                x2.textContent = resul;                  
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fila 4, Celda 1</td>
+                    <td>Fila 4, Celda 2</td>
+                    <td>Fila 4, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 5, Celda 1</td>
+                    <td>Fila 5, Celda 2</td>
+                    <td>Fila 5, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 6, Celda 1</td>
+                    <td>Fila 6, Celda 2</td>
+                    <td>Fila 6, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 7, Celda 1</td>
+                    <td>Fila 7, Celda 2</td>
+                    <td>Fila 7, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 8, Celda 1</td>
+                    <td>Fila 8, Celda 2</td>
+                    <td>Fila 8, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 9, Celda 1</td>
+                    <td>Fila 9, Celda 2</td>
+                    <td>Fila 9, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 10, Celda 1</td>
+                    <td>Fila 10, Celda 2</td>
+                    <td>Fila 10, Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 11, Celda 1</td>
+                    <td>Fila 11, Celda 2</td>
+                    <td>Fila 11, Celda 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
