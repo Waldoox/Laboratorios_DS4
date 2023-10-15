@@ -84,19 +84,61 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Fila 4, Celda 1</td>
-                    <td>Fila 4, Celda 2</td>
-                    <td>Fila 4, Celda 3</td>
+                    <td>Eliminar valores de una lista despegable </td>
+                    <td>
+                        <select id="mySelect">
+                            <option>Messi</option>
+                            <option>Cristiano Ronaldo</option>
+                            <option>Mbappe</option>
+                            <option>Neymar</option>
+                        </select>
+                    </td>
+                    <td>
+                        
+                            <button onclick="eliminarValor('mySelect')">Eliminar</button>
+                        
+                            <script>
+                                function eliminarValor(selectId) {
+                                    var select = document.getElementById(selectId);
+                                    var selectedIndex = select.selectedIndex;
+                                    if (selectedIndex !== -1) {
+                                        select.remove(selectedIndex);
+                                    }
+                                }
+                            </script>
+                            
+                        
+                    </td>
                 </tr>
                 <tr>
-                    <td>Fila 5, Celda 1</td>
-                    <td>Fila 5, Celda 2</td>
-                    <td>Fila 5, Celda 3</td>
+                    <td>Un botón que me lleve a un video de youtube (con js) </td>
+                    <td> Click para ir al video de YouTube</td>
+                    <td>    
+
+                        <button onclick="irAYoutubeVideo()">Ir a video</button>
+                        <Script>
+                              function irAYoutubeVideo() {
+                                window.location.href = "https://www.youtube.com/watch?v=3ryID_SwU5E&ab_channel=MrBeast"; // Reemplaza VIDEO_ID con el ID del video de YouTube
+                            }
+
+                        </Script>
+
+                    </td>
                 </tr>
                 <tr>
-                    <td>Fila 6, Celda 1</td>
-                    <td>Fila 6, Celda 2</td>
-                    <td>Fila 6, Celda 3</td>
+                    <td>Mandar un mensaje al usuario con el nombre colocado en el punto 1.3 (uso de alert)</td>
+                    <td>Click para mandar mensaje </td>
+                    <td>
+                        
+                           <button onclick="myFunction()">Mensaje</button>
+                        <script>
+                         var x2 = document.getElementById("concatenar_texto");
+                            function myFunction() {
+                                alert(x2.textContent);
+                            }
+                        </script>
+
+                    </td>
                 </tr>
                 <tr>
                     <td>Fila 7, Celda 1</td>
