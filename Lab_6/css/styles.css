@@ -179,3 +179,22 @@ header{
 .banner-text{
     color: white;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url(../img/bg-section.png);
+    color: #fff;
+}
+
+.logo-utp {
+    width: 150px;
+    height: 150px;
+}
+
+.logo-fisc {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+}
