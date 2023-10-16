@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <title>LaboratorioJS</title>
+
 </head>
 <body>
+    <header>
+        <h1>Laboratorio JS</h1>
+        <ul>
+            <h2>Integrantes:</h2>
+            <li>
+                <h3>Kevin Barria</h3>
+            </li>
+            <li>
+                <h3>
+                    Freddy Pan
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    Daniel Perdomo
+                </h3>
+            </li>
+        </ul>
+    </header>
     <section>
-        <h1>Tabla 3x11</h1>
         <table>
             <thead>
                 <tr>
@@ -141,32 +150,159 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Fila 7, Celda 1</td>
-                    <td>Fila 7, Celda 2</td>
-                    <td>Fila 7, Celda 3</td>
+                    <td>Mandar el nombre a la consola</td>
+                    <td>
+                        Click para enviar a consola
+                    </td>
+                    <td>
+                        <button onclick="enviarConsola()">
+                            Enviar a consola
+                        </button>
+                        <script>
+                            function enviarConsola(){
+                                let nombre = document.getElementById("concatenar_texto")
+                                console.log(nombre.textContent)
+                            }
+                        </script>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Fila 8, Celda 1</td>
-                    <td>Fila 8, Celda 2</td>
-                    <td>Fila 8, Celda 3</td>
+                    <td>
+                        Check y su estado
+                    </td>
+                    <td>
+                        <input type="checkbox" id="check">
+                    </td>
+                    <td>
+                        <button onclick="estadoCheck()">Mostrar Estado</button>
+                        <script>
+                            function estadoCheck(){
+                                let check = document.getElementById("check");
+
+                                if (check.checked) {
+                                    alert("Seleccionado");
+                                }
+                                else{
+                                    alert("No seleccionado");
+                                }
+                            }
+                        </script>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Fila 9, Celda 1</td>
-                    <td>Fila 9, Celda 2</td>
-                    <td>Fila 9, Celda 3</td>
+                    <td>
+                        Radio y su estado
+                    </td>
+                    <td><input type="radio" id="radio"></td>
+                    <td>
+                        <button onclick="imprimirEstado()">Mostrar Estado</button>
+                        <script>
+                            function imprimirEstado() {
+                                let radio = document.getElementById("radio");
+
+                                if (radio.checked) {
+                                    alert("Seleccionado");
+                                }
+                                else{
+                                    alert("No seleccionado");
+                                }
+                            }
+
+                        </script>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Fila 10, Celda 1</td>
-                    <td>Fila 10, Celda 2</td>
-                    <td>Fila 10, Celda 3</td>
+                    <td>
+                        Validar campo 
+                    </td>
+                    <td>
+                       <label for="">Campo</label>
+                       <input type="text" id="campoVal" placeholder="Click para verificar">
+                    </td>
+                    <td>
+                        <button onclick="verificar()">Validar</button>
+                    </td>
+
+                    <script>
+                        function validar(){
+                            let campo = document.getElementById("campoVal").value;
+                            const formato = new RegExp('^[A-Z]+$', 'i');
+                            let valido = false;
+
+                            if(formato.test(campo)){
+                                valido = true;
+                            }
+
+                            return valido;
+                        }
+
+                        function verificar(){
+                            const valido = validar();
+
+                            if(!valido){
+                                alert("Campo no valido, Solo letras");
+                            }
+                            else{
+                                alert("Campo valido")
+                            }
+                        }
+                    </script>
                 </tr>
                 <tr>
-                    <td>Fila 11, Celda 1</td>
-                    <td>Fila 11, Celda 2</td>
-                    <td>Fila 11, Celda 3</td>
+                    <td>Modelar API</td>
+                    <td id="personajes" class="personajes">
+                        
+                    </td>
+                    <td>
+                        <button onclick="obtenerDatos()">Llamar API</button>
+                    </td>
+                    <script>
+                        function obtenerDatos(){
+                            fetch('https://rickandmortyapi.com/api/character')
+                            .then(resultado => {
+                                resultado.json()
+                                .then(json => {
+                                    personaje = json.results;
+                                    console.log(personaje);
+                                    mapearPersonaje();
+                                })
+                            });
+                        }
+
+                        function mapearPersonaje(){
+                            let contenido = document.getElementById("personaje");
+                            let contenedor = document.getElementById("personajes");
+
+                            for (let i = 0; i < 3; i++){
+                                contenedor.innerHTML += mapearPlantilla(personaje[i]);
+                            }
+                        }
+
+                        function mapearPlantilla(personaje){
+                            return `
+                                <article id="personaje" class="personaje">
+                                    <img class="personaje-img" src="${personaje.image}" alt="">
+                                    <section class="personaje-card">
+                                        <h3 class="nombre">${personaje.name}</h3>
+                                        <p class="status">${personaje.status}</p>
+                                        <p class="gender">${personaje.gender}</p>
+                                    </section>
+                                </article>
+                            `
+                        }
+
+                    </script>
                 </tr>
+                
             </tbody>
         </table>
     </section>
+
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-img" src="img/logo_fisc.png" alt="">
+            <img class="logo-img" src="img/logo_utp.png" alt="">
+        </div>
+    </footer>
 </body>
 </html>
