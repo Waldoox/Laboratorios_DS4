@@ -1,0 +1,94 @@
+body{
+    background-color: #0AA689;
+}
+*{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #ece8e1;
+}
+
+table {
+    width: 67%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #0f1923;
+}
+
+thead{
+    background-color: #034AA6;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #0f1923;
+}
+td {
+    padding: 10px;
+    text-align: center;
+    background-color: #ece8e1;
+    color: #0f1923;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+td p{
+    color: #0f1923;
+}
+h1{
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    color: #0f1923;
+}
+
+button {
+    background-color: #9ABF4B;
+    color: #0f1923;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+
+.personajes{
+    padding: 30px;
+}
+
+.personaje{
+    margin-top: 20px;
+    background-color: #9ABF4B;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.personaje-img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nombre{
+    color: #0f1923;
+}
+
+.logo-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+
+.logo-img{
+    width: 10%;
+}
