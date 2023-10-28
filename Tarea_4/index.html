@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Inicio de Sesión</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="password-toggle" onclick="togglePassword()">&#x1f441;</span>
+            </div>
+            <div id="loader">
+                Cargando...
+            </div>
+            <div class="success-message" id="success-message"></div>
+            <div class="error-message" id="error-message"></div>
+            <button class="btn" type="button" onclick="login()">Iniciar Sesión</button>
+        </form>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
