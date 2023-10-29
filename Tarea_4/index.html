@@ -19,9 +19,7 @@
                 <input type="password" id="contraseña" class="input_pass" placeholder="Contraseña" name="password" required>
                 <span class="password-toggle" id="eyeicon" >&#x1f441;</span>
             </div>
-            <div id="loader">
-                Cargando...
-            </div>
+
             <div class="success-message" id="success-message"></div>
             <div class="error-message" id="error-message"></div>
             <button class="btn" type="button">Iniciar Sesión</button>
@@ -35,18 +33,7 @@
         let btn = document.querySelector('.btn')
 
         //registrar
-        btn.onclick = function(){
-            //obtener valor ingresado
-            let username=input_user.value
-            let password=input_pass.value
-
-            //validar nombre de usuario y contraseña que sea mayor de 6 digito
-            if (username.indexOf('@gmail.com')=== -1) {
-                alert('Credenciales incorrectas. Inténtelo de nuevo.')
-            } else {
-                alert('¡Inicio de sesión exitoso!')
-            }
-        }
+       
 
         //Mostrar/Ocultar contraseña
         let eyeicon = document.getElementById('eyeicon')
@@ -63,6 +50,35 @@
         //
         input_user.value = localStorage.getItem('username')
         input_pass.value = localStorage.getItem('password')
+
+        //
+        btn.onclick = async function() {
+            this.innerHTML = "<div class='loader'></div>";
+            
+            let username = input_user.value;
+            let password = input_pass.value;
+        
+            try {
+                await verificarCredenciales(username, password);
+                btn.innerHTML = "Iniciar sesión"; 
+                alert('¡Inicio de sesión exitoso!');
+            } catch (error) {
+                btn.innerHTML = "Iniciar sesión";
+                alert('Credenciales incorrectas. Inténtelo de nuevo.');
+            }
+        };
+        
+        function verificarCredenciales(username, password) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (username.indexOf('@gmail.com') !== -1) {
+                        resolve(); 
+                    } else {
+                        reject(); 
+                    }
+                }, 2000); 
+            });
+        }
     </script>
 </body>
 </html>
