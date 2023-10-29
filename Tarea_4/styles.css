@@ -67,3 +67,23 @@ input[type="text"], input[type="password"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.loader{
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #ffffff;
+    animation: ani1 1s ease infinite;
+}
+
+@keyframes ani1 {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+    
+}
