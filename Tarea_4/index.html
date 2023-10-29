@@ -20,8 +20,29 @@
                 <span class="password-toggle" id="eyeicon" >&#x1f441;</span>
             </div>
 
-            <div class="success-message" id="success-message"></div>
-            <div class="error-message" id="error-message"></div>
+            <div class="alert-message" id="success-message">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                  <h2>¡Inicio de sesión exitoso!</h2>
+                  <a class="btn-cerrar" id="cerrar" onclick="hide()">Cerrar</a>
+            </div>
+            <div class="alert-message" id="error-message">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-face-id-error" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+                    <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+                    <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+                    <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+                    <path d="M9 10h.01" />
+                    <path d="M15 10h.01" />
+                    <path d="M9.5 15.05a3.5 3.5 0 0 1 5 0" />
+                  </svg>
+                  <h2>Credenciales incorrectas. Inténtelo de nuevo.</h2>
+                  <a class="btn-cerrar-error" id="cerrar" onclick="hideE()">Cerrar</a>
+            </div>
             <button class="btn" type="button">Iniciar Sesión</button>
         </form>
     </div>
@@ -61,10 +82,10 @@
             try {
                 await verificarCredenciales(username, password);
                 btn.innerHTML = "Iniciar sesión"; 
-                alert('¡Inicio de sesión exitoso!');
+                showSuccess();
             } catch (error) {
                 btn.innerHTML = "Iniciar sesión";
-                alert('Credenciales incorrectas. Inténtelo de nuevo.');
+                showError();
             }
         };
         
@@ -78,6 +99,24 @@
                     }
                 }, 2000); 
             });
+        }
+
+        function showSuccess() {
+            var alerta = document.getElementById("success-message")
+            alerta.style.display = "block"
+        }
+        function showError(){
+            var alerta = document.getElementById("error-message")
+            alerta.style.display="block"
+        }
+
+        function hide(){
+            var alerta = document.getElementById("success-message")
+            alerta.style.display="none"
+        }
+        function hideE(){
+            var alerta = document.getElementById("error-message")
+            alerta.style.display="none"
         }
     </script>
 </body>
